@@ -1,0 +1,5 @@
+.DS_Store
+.idea/
+credentials.py
+previous.txt
+*.py[cod]
