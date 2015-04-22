@@ -109,7 +109,7 @@ def bot_main():
             complete(submission)
         # Submission has been previously added to database
         else:
-            log.warning("Previously completed %s" % submission.id)
+            log.warning("\tPreviously completed %s" % submission.id)
     log.verbose("-- Sleeping @ %s --" % strftime("%d/%m/%Y %H:%M:%S"))
 
 
