@@ -110,7 +110,7 @@ def verbose(text):
 
 
 def error(text):
-    print draw(text, fg_red=True)
+    print draw("**%s**" % (text,), fg_red=True)
 
 
 def warning(text):
