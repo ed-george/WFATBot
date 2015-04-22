@@ -100,10 +100,11 @@ def bot_main():
             # If any relevant submissions were found, add comment to base post
             if len(relevant_previous_submissions) > 0:
                 if not DEBUG:
-                    log.verbose("=> Posting comment on %s (link: %s)" % (id, submission.permalink))
+                    log.verbose("=> Posting comment on %s (link: %s)" % (submission.id, submission.permalink))
                     submission.add_comment(comment(relevant_previous_submissions))
                 else:
-                    log.warning("DEBUG MODE: Comment would be posted on %s (link: %s)" % (id, submission.permalink))
+                    log.warning("DEBUG MODE: Comment would be posted on %s (link: %s)"
+                                % (submission.id, submission.permalink))
             # Add base post to database
             complete(submission)
         # Submission has been previously added to database
