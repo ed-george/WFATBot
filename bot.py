@@ -98,7 +98,7 @@ def bot_main():
                 # add it to the list of relevant submissions
                 if searched_submission.id != submission.id:
                     log.success("<= found relevant post: %s" % searched_submission.id)
-                    relevant_previous_submissions.append(searched_submission)\
+                    relevant_previous_submissions.append(searched_submission)
 
             # If any relevant submissions were found, add comment to base post
             if len(relevant_previous_submissions) > 0:
